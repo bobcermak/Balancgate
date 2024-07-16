@@ -1,0 +1,124 @@
+
+  
+html {
+    scroll-behavior: smooth
+  }
+  
+  /*Header*/
+  
+  header {
+      background-color: #E1CEB7;
+      border-color: #E1CEB7;
+  }
+  
+  /*Main*/
+  
+  .masage2 {
+      position: fixed;
+      top: 0%;
+      height: 100%;
+      width: 100%;
+      z-index: -5;
+  }
+
+  /*Kita-omne*/
+
+  .kita-omne {
+    width: 90%;
+    height: 1800px;
+    margin-left: 5%;
+    margin-top: -2.5%;
+    background-color: #f5e2cb;
+    -webkit-box-shadow: 0px -6px 30px -10px rgba(122,116,109,1);
+    -moz-box-shadow: 0px -6px 30px -10px rgba(122,116,109,1);
+    box-shadow: 0px -6px 30px -10px rgba(122,116,109,1);
+   }
+
+  .kita {
+    top: 13.5%;
+    left: 24%;
+    z-index: 3;
+  }
+
+  .odstavec {
+    width: 500px;
+    padding-top: 60px;
+    left: 47%;
+    top: 17%;
+    background-color: #E1CEB7;
+  }
+
+  .odstavec p {
+    width: 80%;
+    padding-left: 16%;
+    top: 3.5%;
+  }
+
+  
+  .pristup {
+    top: 42.5%;
+  }
+
+  .prostred {
+    top: 52.5%;
+    left: 47%;
+    z-index: 3;
+  }
+
+
+  .odstavec1 {
+    padding-top: 60px;
+    left: 21%;
+    top: 56%;
+    z-index: 2;
+    background-color: #E1CEB7;
+    width: 550px;
+  }
+
+  .odstavec1 p {
+    width: 59%;
+    top: 3.5%;
+    height: 100%;
+    left: 2%;
+  }
+
+
+  /*Button*/
+
+  .sluzbyo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 750%;
+    border: none;
+    width: 180px;
+    height: 60px;
+    background-color: #E1CEB7;
+    transition: 0.5s all;
+    cursor: pointer;
+  }  
+
+  .sluzbyo:hover {
+    background-color: #5c5853;
+    color: white;
+  }
+  
+  
+  
+    /*Footer*/
+  
+  
+    footer {
+      background-color: #E1CEB7;
+      height: 280px;
+      margin-top: -1%;
+    }
+  
+    @media only screen and (max-width: 768px) {
+      footer {
+        height: 320px;
+      }
+  }
+  
+    

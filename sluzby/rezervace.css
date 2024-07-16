@@ -1,0 +1,293 @@
+html {
+    scroll-behavior: smooth
+  }
+  
+  /*Header*/
+  
+  header {
+      background-color: #E1CEB7;
+      border-color: #E1CEB7;
+  }
+
+  /*Main*/
+
+
+  .vse {
+    background-color: #FFF6EB;
+    z-index: 30;
+    width: 90%;
+    margin-left: 5%;
+   }
+
+  .masage2 {
+    position: fixed;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+  }
+
+  .sluzbynad {
+    width: 90%;
+    height: 235px;
+    margin-left: 5%;
+    margin-top: -2.5%;
+    z-index: 20;
+    background-color: #f5e2cb;
+    -webkit-box-shadow: 0px -6px 30px -10px rgba(122,116,109,1);
+    -moz-box-shadow: 0px -6px 30px -10px rgba(122,116,109,1);
+    box-shadow: 0px -6px 30px -10px rgba(122,116,109,1);
+}
+
+/*Záda a krk*/
+
+  .hm-zk {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .hm-zk h2 {
+    top: 3.5%;
+   }
+
+   .celk {
+    border: 0.1px solid #5c5853;
+    height: 75px;
+    width: 185px;
+    top: 11.5%;
+    background-color: white;
+    color: #5c5853;
+   }
+
+   .cas {
+    border: 0.2px solid #5c5853;
+    width: 50%;
+   }
+
+   .penize {
+    border: 0.2px solid #5c5853; 
+    width: 50%;
+   } 
+
+   .vicerez {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 23.5%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 180px;
+    height: 60px;
+    background-color: #E1CEB7;
+    transition: 0.5s all;
+    cursor: pointer;
+  }  
+
+  .vicerez:hover {
+    background-color: #5c5853;
+    color: white;
+  }
+
+  .popis {
+    top: 34%;
+  }
+
+  .lorem {
+    width: 100%;
+    line-height: 1.5em;
+    top: 41%;
+   }
+
+   .hr {
+    border: 0.2px solid #5c5853;
+    top: 105%;
+    width: 70%;
+   }
+
+   .obrmasage {
+    height: 410px;
+    z-index: 5;
+    margin-top: 70%;
+   }
+
+   /*Dolní-horní*/
+
+   .hm-dhk {
+    height: 1000px;
+    width: 90%;
+    margin-left: 5%;
+   }
+
+   .hm-dhk h2 {
+    top: 7.5%;
+   }
+
+   .hm-dhk .hr {
+    top: 95%;
+   }
+
+   .hm-dhk .celk {
+    top: 14%;
+   }
+
+   .hm-dhk .vicerez {
+    top: 25%;
+   }
+
+   .hm-dhk .obrmasage {
+    margin-top: 90%;
+   }
+
+   /*Celková*/
+
+   .hm-celk {
+    height: 1300px;
+    width: 90%;
+    margin-left: 5%;
+   }
+
+
+   .hm-celk h2 {
+    top: -0.5%;
+   }
+
+   .hm-celk .celk {
+    top: 4%;
+   }
+
+   .hm-celk .vicerez {
+    top: 12.5%;
+   }
+
+   .hm-celk .popis {
+    top: 19%;
+   }
+
+   .hm-celk .lorem{
+    top: 24.5%;
+   } 
+
+   .hm-celk .obrmasage {
+    margin-top: 66%;
+    height: 31%;
+   }
+
+   .hm-celk2 {
+    height: 1300px;
+    width: 90%;
+    margin-left: 5%;
+   }
+
+
+   .hm-celk2 h2 {
+    top: 6.5%;
+   }
+
+   .hm-celk2 .celk {
+    top: 12%;
+   }
+
+   .hm-celk2 .vicerez {
+    top: 20%;
+   }
+
+   .hm-celk2 .popis {
+    top: 26.5%;
+   }
+
+   .hm-celk2 .lorem{
+    top: 31.5%;
+   } 
+
+   .hm-celk2 .obrmasage {
+    margin-top: 78%;
+    height: 31%;
+   }
+
+   .hm-celk3 {
+    height: 1300px;
+    width: 90%;
+    margin-left: 5%;
+   }
+
+
+   .hm-celk3 h2 {
+    top: 2.5%;
+   }
+
+   .hm-celk3 .celk {
+    top: 8%;
+   }
+
+   .hm-celk3 .vicerez {
+    top: 16.5%;
+   }
+
+   .hm-celk3 .popis {
+    top: 24%;
+   }
+
+   .hm-celk3 .lorem{
+    top: 29.5%;
+   } 
+
+   .hm-celk3 .obrmasage {
+    margin-top: 75%;
+    height: 31%;
+   }
+
+   .vyz {
+    top: 16%;
+   }
+
+   .celk1 {
+    margin-top: 11%;
+   }
+
+   .rez1 {
+    margin-top: 11%;
+   }
+
+   .pop1 {
+    margin-top: 10%;
+   }
+
+   .lo1 {
+    margin-top: 9%;
+   }
+
+   .o1 {
+    position: relative;
+    top: 10%;
+   }
+
+   .k1 {
+    margin-top: 5%;
+   }
+
+   .kontakt-udaje {
+    width: 60%;
+    height: 150px;
+    top: 75.5%;
+   }
+
+   .kontaktp {
+    font-size: clamp(20px, 2vw, 25px);
+    top: 9%;
+   }
+
+
+   /*Footer*/
+
+   footer {
+    background-color: #E1CEB7;
+    height: 280px;
+    margin-top: -1%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    footer {
+      height: 320px;
+    }
+}
+

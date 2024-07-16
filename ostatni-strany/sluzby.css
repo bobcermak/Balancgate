@@ -1,0 +1,521 @@
+
+  
+html {
+    scroll-behavior: smooth
+  }
+
+body {
+  background-color: #FFF6EB;
+}  
+  
+  /*Header*/
+  
+  header {
+      background-color: #E1CEB7;
+      border-color: #E1CEB7;
+  }
+  
+  /*Main*/
+  
+  
+
+  /*Služby*/
+
+
+  .sluzbynad{
+    width: 90%;
+    height: 235px;
+    margin-left: 5%;
+    margin-top: -2.5%;
+    background-color: #f5e2cb;
+    -webkit-box-shadow: 0px -6px 30px -10px rgba(122,116,109,1);
+    -moz-box-shadow: 0px -6px 30px -10px rgba(122,116,109,1);
+    box-shadow: 0px -6px 30px -10px rgba(122,116,109,1);
+  }
+
+  .txtr {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+    height: 90px;
+   }
+
+   .txtr p {
+    width: 35%;
+    left: 33.5%;
+   }
+
+   /*Služby-hlavní*/
+
+   .sluzbyhlav {
+    width: 84%;
+    margin-left: 8%;
+    height: 950px;
+    top: 65%;
+   }
+
+   .sluzbyhlav2 {
+    width: 84%;
+    margin-left: 8%;
+    height: 950px;
+    top: 60%;
+   }
+
+   .sluzbyhlav3 {
+    width: 84%;
+    margin-left: 8%;
+    height: 950px;
+    top: 60%;
+   }
+
+   .sl {
+    height: 42%;
+    width: 80%;
+    left: 10%;
+   }
+
+   .sld {
+    border: 2px solid #E1CEB7;
+    width: 28%;
+    -webkit-box-shadow: 10px 10px 18px 0px #E1CEB7;
+    -moz-box-shadow: 10px 10px 18px 0px #E1CEB7;
+    box-shadow: 10px 10px 18px 0px #E1CEB7;
+   }
+
+   .sluzby1 {
+    top: 5%;
+   }
+
+   .sluzby2 {
+    top: 8.5%
+   }
+
+   .sluzby3 {
+    top: 12%
+   }
+
+  /*Služby-hlavní-malý*/
+   
+
+  .sluzby1m {
+    top: 5%;
+   }
+
+   .sluzby2m {
+    top: 8.5%
+   }
+
+   .sluzby3m {
+    top: 12%
+   }
+
+   .sluzby4m {
+    top: 15.5%;
+   }
+
+   .sluzby5m {
+    top: 19%
+   }
+
+   .sluzby6m {
+    top: 22.5%
+   }
+
+
+   /*Button*/
+
+   .vicerez {
+    left: 24.5%;
+    top: 66.5%;
+    font-size: clamp(11px, 2vw, 16px);
+    width: 50%;
+    height: 40px;
+    transition: 0.5s all;
+    cursor: pointer;
+   }
+
+   .vicerez:hover {
+    background-color: #E1CEB7;
+   }
+
+   
+
+   /*Sld-1*/
+
+   .sld1 {
+    background: url(https://images.pexels.com/photos/6560304/pexels-photo-6560304.jpeg?cs=srgb&dl=pexels-anna-tarazevich-6560304.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    width: 285px;
+   }
+
+   .sld1poz {          
+    bottom: 0%;
+    background-color: #FFF6EB;
+    height: 50%;
+    z-index: 5;
+   }
+
+   .sld1poz h2 {
+    top: 6%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(15px, 2vw, 20px);
+    z-index: 5;
+    font-weight: 700;
+   }
+
+   .sld1poz h2 span {
+    font-family: 'Times New Roman', Times, serif;
+    left: 33.5%;
+    z-index: 5;
+   }
+
+   .sld1poz p {
+    font-size: clamp(11px, 2vw, 16px);
+    top: 42.5%;
+    font-weight: 500;
+   }
+
+
+    /*Sld-2*/
+
+   .sld2 {
+    background: url(https://images.pexels.com/photos/6560304/pexels-photo-6560304.jpeg?cs=srgb&dl=pexels-anna-tarazevich-6560304.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    width: 285px;
+   }
+
+   .sld2poz {          
+    bottom: 0%;
+    background-color: #FFF6EB;
+    height: 50%;
+    z-index: 5;
+   }
+
+   .sld2poz h2 {
+    top: 6%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(15px, 2vw, 20px);
+    z-index: 5;
+    font-weight: 700;
+   }
+
+   .sld2poz h2 span {
+    font-family: 'Times New Roman', Times, serif;
+    left: 38.5%;
+    z-index: 5;
+   }
+
+   .sld2poz p {
+    font-size: clamp(11px, 2vw, 16px);
+    top: 42.5%;
+    font-weight: 500;
+   }
+
+
+    /*Sld-3*/
+
+   .sld3 {
+    background: url(https://images.pexels.com/photos/6560304/pexels-photo-6560304.jpeg?cs=srgb&dl=pexels-anna-tarazevich-6560304.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    width: 285px;
+   }
+
+   .sld3poz {          
+    bottom: 0%;
+    background-color: #FFF6EB;
+    height: 50%;
+    z-index: 5;
+   }
+
+   .sld3poz h2 {
+    top: 6%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(15px, 2vw, 20px);
+    z-index: 5;
+    font-weight: 700;
+   }
+
+   .sld3poz h2 span {
+    font-family: 'Times New Roman', Times, serif;
+    left: 33.5%;
+    z-index: 5;
+   }
+
+   .sld3poz p {
+    font-size: clamp(11px, 2vw, 16px);
+    top: 33.5%;
+    font-weight: 500;
+   }
+
+
+   /*Sld-4*/
+
+   .sld4 {
+    background: url(https://images.pexels.com/photos/6560304/pexels-photo-6560304.jpeg?cs=srgb&dl=pexels-anna-tarazevich-6560304.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    width: 285px;
+   }
+
+   .sld4poz {          
+    bottom: 0%;
+    background-color: #FFF6EB;
+    height: 50%;
+    z-index: 5;
+   }
+
+   .sld4poz h2 {
+    top: 6%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(15px, 2vw, 20px);
+    z-index: 5;
+    font-weight: 700;
+   }
+
+   .sld4poz h2 span {
+    font-family: 'Times New Roman', Times, serif;
+    left: 39.5%;
+    z-index: 5;
+   }
+
+   .sld4poz p {
+    font-size: clamp(11px, 2vw, 16px);
+    top: 42.5%;
+    font-weight: 500;
+   }
+
+   /*Sld-5*/
+
+   .sld5 {
+    background: url(https://images.pexels.com/photos/6560304/pexels-photo-6560304.jpeg?cs=srgb&dl=pexels-anna-tarazevich-6560304.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    width: 285px;
+   }
+
+   .sld5poz {          
+    bottom: 0%;
+    background-color: #FFF6EB;
+    height: 50%;
+    z-index: 5;
+   }
+
+   .sld5poz h2 {
+    top: 6%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(15px, 2vw, 20px);
+    z-index: 5;
+    font-weight: 700;
+   }
+
+   .sld5poz h2 span {
+    font-family: 'Times New Roman', Times, serif;
+    left: 38.5%;
+    z-index: 5;
+   }
+
+   .sld5poz p {
+    font-size: clamp(11px, 2vw, 16px);
+    top: 42.5%;
+    font-weight: 500;
+   }
+
+   /*Sld-6*/
+
+   .sld6 {
+    background: url(https://images.pexels.com/photos/6560304/pexels-photo-6560304.jpeg?cs=srgb&dl=pexels-anna-tarazevich-6560304.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    width: 285px;
+   }
+
+   .sld6poz {          
+    bottom: 0%;
+    background-color: #FFF6EB;
+    height: 50%;
+    z-index: 5;
+   }
+
+   .sld6poz h2 {
+    top: 6%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(15px, 2vw, 20px);
+    z-index: 5;
+    font-weight: 700;
+   }
+
+   .sld6poz h2 span {
+    font-family: 'Times New Roman', Times, serif;
+    left: 28.5%;
+    z-index: 5;
+   }
+
+   .sld6poz p {
+    font-size: clamp(11px, 2vw, 16px);
+    top: 42.5%;
+    font-weight: 500;
+   }
+   
+   
+
+
+  
+  
+  
+  
+  /*Footer*/
+  
+  
+  footer {
+    background-color: #E1CEB7;
+    height: 280px;
+    margin-top: -1%;
+  }
+  
+
+
+    @media only screen and (min-width: 1536px) {
+      .sluzbyhlav2 {
+        top: -200%;
+       }
+    
+       .sluzbyhlav3 {
+        top: -200%;
+       }
+  }
+
+
+  @media only screen and (max-width: 1768px) {
+    footer {
+      height: 320px;
+    }
+}
+
+
+@media only screen and (max-width: 1023px) {
+  .sluzbyhlav {
+    top: -200%;
+   }
+
+   .sluzbyhlav2 {
+    top: -200%;
+   }
+}
+
+@media only screen and (min-width: 1922px){
+  footer {
+    margin-top: 55%;
+  }
+}
+
+@media only screen and (min-width: 1724px) and (max-width: 1921px) {
+  footer {
+    margin-top: 62%;
+  }
+
+}
+
+@media only screen and (min-width: 1536px) and (max-width: 1723px) {
+  footer {
+    margin-top: 70%;
+  }
+
+
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1535px) {
+  footer {
+    margin-top: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  footer {
+    margin-top: 115%;
+  }
+
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+  footer {
+    margin-top: 125%;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1099px) {
+  footer {
+    margin-top: 135%;
+  }
+
+}
+
+@media only screen and (min-width: 860px) and (max-width: 1023px) {
+  footer {
+    margin-top: 195%;
+  }
+
+}
+
+
+@media only screen and (min-width: 690px) and (max-width: 859px) {
+  footer {
+    margin-top: 250%;
+  }
+
+}
+
+@media only screen and (min-width: 550px) and (max-width: 689px) {
+  footer {
+    margin-top: 320%;
+  }
+
+}
+
+@media only screen and (min-width: 440px) and (max-width: 549px) {
+  footer {
+    margin-top: 400%;
+  }
+
+}
+
+@media only screen and (min-width: 390px) and (max-width: 439px) {
+  footer {
+    margin-top: 485%;
+  }
+
+}
+
+@media only screen and (max-width: 389px) {
+  footer {
+    margin-top: 590%;
+  }
+
+}
+
+/*Cards*/
+
+@media only screen and (min-width: 1300px) and (max-width: 1539px) {
+  .sluzbyhlav {
+    top: 90%;
+   }
+
+}
+
+/*Jine*/
+
+@media only screen and (max-width: 768px) {
+  footer {
+    height: 320px;
+  }
+}

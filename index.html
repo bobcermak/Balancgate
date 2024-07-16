@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://i.pinimg.com/736x/b4/9d/67/b49d67c1ff2ba13c8d25996169332197.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/924cd312b8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>NVIDIA</title>
+</head>
+<body>
+    <header class="sticky-header z-50">
+        <nav class="relative px-4 py-4 flex justify-between items-center bg-[#E1CEB7] border-[#E1CEB7] h-24">
+            <div class="flex flex-col ml-16 items-center justify-center">
+                <h1 class="text-2xl lg:text-4xl font-semibold text-neutral-500">Balancgate</h1>
+                <p class="text-sm lg:text-lg text-neutral-500">MASÁŽE A TEJPOVÁNÍ</p>
+            </div>
+            <!--Mobile-->
+            <div class="lg:hidden">
+                <button class="navbar-burger flex items-center text-lime-500 p-3">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <menu class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+                <li><a class="active text-lg text-neutral-500 hover:text-gray-800 transition duration-300 all" href="index.html"><i class="fa-solid fa-house"></i> Domů</a></li>
+                <li class="text-neutral-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-lg text-neutral-500 hover:text-gray-800 transition duration-300 all" href="./header-pages/o-nas.html">O nás</a></li>
+                <li class="text-neutral-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-lg text-neutral-500 hover:text-gray-800 transition duration-300 all" href="./header-pages/sluzby.html">Služby</a></li>
+                <li class="text-neutral-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                    </svg>
+                </li>
+                <li><a class="text-lg text-neutral-500 hover:text-gray-800 transition duration-300 all" href="#kontakt">Kontakt</a></li>
+            </menu>
+        </nav>
+        <div class="navbar-menu relative z-50 hidden">
+            <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-75 z-30"></div>
+            <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                <div class="flex items-center mb-8">
+                    <a class="mr-auto text-3xl leading-none text-gray-800" href="#">
+                        <svg class="h-12" viewBox="0 0 10240 10240">
+                            <path xmlns="http://www.w3.org/2000/svg" d="M8284 9162 c-2 -207 -55 -427 -161 -667 -147 -333 -404 -644 -733 -886 -81 -59 -247 -169 -256 -169 -3 0 -18 -9 -34 -20 -26 -19 -344 -180 -354 -180 -3 0 -29 -11 -58 -24 -227 -101 -642 -225 -973 -290 -125 -25 -397 -70 -480 -80 -22 -3 -76 -9 -120 -15 -100 -13 -142 -17 -357 -36 -29 -2 -98 -7 -153 -10 -267 -15 -436 -28 -525 -40 -14 -2 -45 -7 -70 -10 -59 -8 -99 -14 -130 -20 -14 -3 -41 -7 -60 -11 -19 -3 -39 -7 -45 -8 -5 -2 -28 -6 -50 -10 -234 -45 -617 -165 -822 -257 -23 -10 -45 -19 -48 -19 -7 0 -284 -138 -340 -170 -631 -355 -1107 -842 -1402 -1432 -159 -320 -251 -633 -308 -1056 -26 -190 -27 -635 -1 -832 3 -19 7 -59 10 -89 4 -30 11 -84 17 -120 6 -36 12 -77 14 -91 7 -43 33 -174 39 -190 3 -8 7 -28 9 -45 6 -35 52 -221 72 -285 7 -25 23 -79 35 -120 29 -99 118 -283 189 -389 67 -103 203 -244 286 -298 75 -49 178 -103 196 -103 16 0 27 16 77 110 124 231 304 529 485 800 82 124 153 227 157 230 3 3 28 36 54 74 116 167 384 497 546 671 148 160 448 450 560 542 14 12 54 45 90 75 88 73 219 172 313 238 42 29 77 57 77 62 0 5 -13 34 -29 66 -69 137 -149 405 -181 602 -7 41 -14 82 -15 90 -1 8 -6 46 -10 83 -3 37 -8 77 -10 88 -2 11 -7 65 -11 122 -3 56 -8 104 -9 107 -2 3 0 12 5 19 6 10 10 8 15 -10 10 -34 167 -230 283 -355 251 -264 531 -450 814 -551 129 -45 324 -84 470 -91 l73 -3 0 -75 c0 -63 3 -73 22 -85 13 -8 38 -13 63 -11 61 3 72 28 72 157 l0 117 88 4 c113 5 322 41 457 79 339 97 609 252 864 472 42 37 80 67 84 67 4 0 32 -31 61 -69 119 -160 278 -307 446 -417 280 -185 583 -296 917 -339 134 -17 464 -13 590 7 238 38 450 111 677 231 43 22 82 42 88 46 5 3 20 12 32 19 11 6 39 24 61 40 22 15 46 29 52 30 5 1 46 24 90 51 45 27 124 81 177 120 207 148 420 328 420 349 0 4 -13 24 -29 45 -81 111 -269 393 -333 480 -191 257 -394 503 -615 732 -170 175 -486 444 -667 556 -300 188 -616 312 -933 368 -209 37 -579 43 -792 11 -35 -5 -80 -11 -100 -14 -112 -14 -297 -18 -375 -9 -87 9 -210 40 -283 71 -69 29 -223 122 -289 173 -149 115 -327 306 -406 429 -8 12 -14 25 -14 29 0 5 -11 23 -25 41 -14 17 -34 47 -45 66 -10 19 -22 34 -27 34 -4 0 -8 -17 -9 -38z"/>
+                        </svg>
+                    </a>
+                    <button class="navbar-close">
+                        <svg class="h-6 w-6 text-gray-800 cursor-pointer hover:text-neutral-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <ul>
+                        <li class="mb-1">
+                            <a class="block p-4 text-lg font-semibold text-neutral-500 hover:bg-gray-200 rounded" href="index.html"><i class="fa-solid fa-house"></i> Domů</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-lg font-semibold text-neutral-500 hover:bg-gray-200 rounded" href="./header-pages/o-nas.html">O nás</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-lg font-semibold text-neutral-500 hover:bg-gray-200 rounded" href="./header-pages/sluzby.html">Služby</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-lg font-semibold text-neutral-500 hover:bg-gray-200 rounded" href="#kontakt">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="welcome-section bg-[#D4B896] flex items-center justify-center h-[500px]" id="welcomeSection" style="width: 90%; margin-left: 5%;">
+            <div class="text-center">
+                <h1 class="text-6xl font-semibold text-black mb-4 shadow-text">BALANCGATE</h1>
+                <p class="text-xl text-neutral-500 shadow-text">VAŠE BRÁNA K ŽIVOTNÍ ROVNOVÁZE</p>
+                <a href="#"><div class="butt relative flex justify-center items-center mt-6 text-lg w-36 h-14 text-white cursor-pointer" style="left: 50%; transform: translateX(-50%);">Služby</div></a>
+            </div>
+        </section>
+        
+
+        <section class="text-gray-600 body-font dark:text-gray-400 mt-14 dark:bg-gray-800 relative">
+            <div class="container mx-auto overflow-hidden">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="text-gray-600 body-font dark:text-gray-400 dark:bg-gray-800">
+                                <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                                        <img class="object-cover object-center rounded" alt="Jensen Huang" src="https://www.zdnet.com/a/img/resize/466a39c0ab1d12eaae8dac734ae46bb47062500f/2020/04/28/3b0d5ffd-d830-4563-9980-9671951953f4/jensen-huang-nvidia-ceo.jpg?auto=webp&fit=crop&height=675&width=1200">
+                                    </div>
+                                    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-white">Generální ředitel společnosti NVIDIA Jensen Huang</h1>
+                                        <p class="mb-8 leading-relaxed" style="font-family: 'Montserrat', sans-serif;">Jensen Huang je vizionářem a podnikatelem, který založil společnost NVIDIA Corporation a vedl ji k revolučnímu pokroku v oblasti grafických technologií a umělé inteligence. Jeho vášeň a odhodlání přinesly světu inovativní produkty, jako jsou grafické karty GeForce a pokročilé AI technologie. Jeho vůdcovství a strategické rozhodnutí učinily z NVIDIA předního hráče v oboru, a jeho vize směřuje k dalším technologickým průlomům a inovacím.</p>
+                                        <div class="flex justify-center">
+                                            <a target="_blank" href="https://www.nvidia.com/gtc/keynote/"><div class="inline-flex text-white font-semibold bg-lime-500 border-0 py-2 px-6 focus:outline-none hover:text-black dark:hover:bg-white dark:hover:text-lime-500 duration-300 all rounded text-lg">Zjistit více</div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="text-gray-600 body-font dark:text-gray-400 dark:bg-gray-800">
+                                <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                                        <img class="object-cover object-center rounded" alt="ChatRTX" src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/02/16.jpg">
+                                    </div>
+                                    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-white">Aktualizace aplikace ChatRTX je
+                                            <br class="hidden lg:inline-block">nyní ke stažení
+                                        </h1>
+                                        <p class="mb-8 leading-relaxed" style="font-family: 'Montserrat', sans-serif;">Vytvoř si chatbota s umělou inteligencí propojeného s tvým obsahem pomocí demoverze aplikace ChatRTX. Získej rychlé a bezpečné odpovědi – to vše lokálně na tvém PC s akcelerací grafickou kartou RTX pomocí technologií RAG a TensorRT-LLM. Nyní s podporou hlasového a obrazového vyhledávání a novými modely.</p>
+                                        <div class="flex justify-center">
+                                            <a target="_blank" href="https://www.nvidia.com/cs-cz/ai-on-rtx/chatrtx/"><div class="inline-flex text-white font-semibold bg-lime-500 border-0 py-2 px-6 focus:outline-none hover:text-black dark:hover:bg-white dark:hover:text-lime-500 duration-300 all rounded text-lg">Zjistit více</div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="text-gray-600 body-font dark:text-gray-400 dark:bg-gray-800">
+                                <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                                        <img class="object-cover object-center rounded" alt="AI" src="https://www.nvidia.com/content/dam/en-zz/Solutions/ai-on-rtx/nvidia-ai-on-rtx-100vp-d.jpg">
+                                    </div>
+                                    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-white">Oznamujeme poskytování mikroslužeb generativní umělé inteligence</h1>
+                                        <p class="mb-8 leading-relaxed" style="font-family: 'Montserrat', sans-serif;">Stavební bloky podnikové úrovně pro vytváření a nasazování vlastních aplikací na vaší platformě při zachování plného vlastnictví a kontroly nad duševním vlastnictvím.</p>
+                                        <div class="flex justify-center">
+                                            <a target="_blank" href="https://www.nvidia.com/en-eu/ai/"><div class="inline-flex text-white font-semibold bg-lime-500 border-0 py-2 px-6 focus:outline-none hover:text-black dark:hover:bg-white dark:hover:text-lime-500 duration-300 all rounded text-lg">Zjistit více</div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Arrows -->
+                    <div class="swiper-button-prev bg-lime-500 rounded-full text-white absolute left-0 top-1/2 transform -translate-y-1/2 z-10"></div>
+                    <div class="swiper-button-next bg-lime-500 rounded-full text-white absolute right-0 top-1/2 transform -translate-y-1/2 z-10"></div>
+                </div>
+            </div>
+        </section>
+        
+                <!-- Section - Umělá inteligence -->
+        <section class="text-gray-600 relative -mt-24 body-font dark:text-gray-400 dark:bg-gray-800">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col">
+            <div class="h-1 bg-gray-200 dark:bg-gray-600 rounded overflow-hidden">
+                <div class="w-24 h-full bg-lime-500 dark:bg-lime-400"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                <h2 class="sm:w-2/5 text-gray-900 dark:text-white font-medium title-font text-2xl mb-2 sm:mb-0">Umělá inteligence</h2>
+                <p class="sm:w-3/5 leading-relaxed text-lg sm:pl-10 pl-0">Umělá inteligence pohání změny v každém odvětví. Poskytuje podnikům výkon, nástroje a algoritmy potřebné pro klíčové úkoly, od rozpoznávání řeči a doporučovacích systémů po lékařskou zobrazovací techniku a řízení dodavatelských řetězců.</p>
+            </div>
+            </div>
+            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6 hover:scale-110 duration-300 all cursor-pointer">
+                <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="Mikroslužby" class="object-cover object-center h-full w-full" src="https://s3.amazonaws.com/cms.ipressroom.com/219/files/20242/65f8b1873d6332145f3719f9_healthcare-microservices-image/healthcare-microservices-image_mid.jpg">
+                </div>
+                <h2 class="text-xl font-medium title-font text-gray-900 dark:text-white mt-5">Inovativní Digitální Léčba</h2>
+                <p class="text-base leading-relaxed mt-2">Nový katalog NVIDIA NIM a GPU-akcelerovaných mikroslužeb pro biologii, chemii, zobrazování a zdravotnická data běží v každém cloudu NVIDIA DGX.</p>
+                <a target="_blank" href="https://nvidianews.nvidia.com/news/healthcare-generative-ai-microservices?_gl=1*6h1dkd*_gcl_au*Mzk4OTM5NzkxLjE3MTU4OTE1MzY." class="text-lime-500 dark:text-lime-400 inline-flex items-center mt-3">Learn More
+                <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6 hover:scale-110 duration-300 all cursor-pointer">
+                <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="Cybersecurity-Domain" class="object-cover object-center h-full w-full" src="https://etimg.etb2bimg.com/thumb/108774507.cms?width=400&height=300">
+                </div>
+                <h2 class="text-xl font-medium title-font text-gray-900 dark:text-white mt-5">Cybersecurity Domain</h2>
+                <p class="text-base leading-relaxed mt-2">CrowdStrike (NASDAQ: CRWD) a NVIDIA oznámily strategickou spolupráci pro poskytování počítačových služeb NVIDIA AI na platformě CrowdStrike Falcon® XDR.</p>
+                <a target="_blank" href="https://www.crowdstrike.com/press-releases/crowdstrike-nvidia-generative-ai-collaboration/?nvid=nv-int-cwmfg-831195" class="text-lime-500 dark:text-lime-400 inline-flex items-center mt-3">Learn More
+                <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6 hover:scale-110 duration-300 all cursor-pointer">
+                <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="Technologie-RAG" class="object-cover object-center h-full w-full" src="https://developer-blogs.nvidia.com/wp-content/uploads/2024/03/graphic-with-cloud-computer-text-woman.jpg">
+                </div>
+                <h2 class="text-xl font-medium title-font text-gray-900 dark:text-white mt-5">Vybudujte technologii RAG pro výrobu</h2>
+                <p class="text-base leading-relaxed mt-2">IT administrátoři čelí výzvám souvisejícím se zabezpečením LLM, použitelností, přenositelností a správou dat. Podnikoví vývojáři mohou mít problémy s přesností LLM.</p>
+                <a target="_blank" href="https://developer.nvidia.com/blog/how-to-take-a-rag-application-from-pilot-to-production-in-four-steps/?_gl=1*lc23l2*_gcl_au*Mzk4OTM5NzkxLjE3MTU4OTE1MzY." class="text-lime-500 dark:text-lime-400 inline-flex items-center mt-3">Learn More
+                <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Section - Hraní a tvorba -->
+        <section class="text-gray-600 relative -mt-10 body-font dark:text-gray-400 dark:bg-gray-800">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col">
+            <div class="h-1 bg-gray-200 dark:bg-gray-600 rounded overflow-hidden">
+                <div class="w-24 h-full bg-lime-500 dark:bg-lime-400"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                <h2 class="sm:w-2/5 text-gray-900 dark:text-white font-medium title-font text-2xl mb-2 sm:mb-0">Hraní a tvorba</h2>
+                <p class="sm:w-3/5 leading-relaxed text-lg sm:pl-10 pl-0">NVIDIA GeForce RTX pohání nejvýkonnější grafické karty na světě a dokonalou platformu pro hráče i tvůrce. Zažijte krásu ray tracingu, DLSS s umělou inteligencí a mnoho dalšího ve hrách i aplikacích na PC, notebooku, v cloudu nebo ve vašem obývacím pokoji.</p>
+            </div>
+            </div>
+            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6 hover:scale-110 duration-300 all cursor-pointer">
+                <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="Hraní-tvorba" class="object-cover object-center h-full w-full" src="https://developer.download.nvidia.com/images/ace/covert-protocol.jpg">
+                </div>
+                <h2 class="text-xl font-medium title-font text-gray-900 dark:text-white mt-5">NVIDIA ACE</h2>
+                <p class="text-base leading-relaxed mt-2">Na GDC 2024 a GTC 2024 bylo oznámeno, že přední vývojáři AI využívají digitální lidské technologie NVIDIA k tvorbě realistických avatarů a herních postav.</p>
+                <a target="_blank" href="https://www.nvidia.com/en-eu/geforce/news/nvidia-ace-gdc-gtc-2024-ai-character-game-and-app-demo-videos/" class="text-lime-500 dark:text-lime-400 inline-flex items-center mt-3">Learn More
+                <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6 hover:scale-110 duration-300 all cursor-pointer">
+                <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="NVIDIA-DLSS" class="object-cover object-center h-full w-full" src="https://assetsio.gnwcdn.com/game-ready-f1-22-gf-article-og-1200x630.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp">
+                </div>
+                <h2 class="text-xl font-medium title-font text-gray-900 dark:text-white mt-5">Vylepšený výkon díky NVIDIA DLSS</h2>
+                <p class="text-base leading-relaxed mt-2">Více než 500 her a aplikací využívá technologie RTX. Každý týden přibývají nové tituly s podporou NVIDIA DLSS, Reflex a ray-tracingu, nabízející hráčům na GeForce RTX vynikající herní zážitek na PC.</p>
+                <a target="_blank" href="https://www.nvidia.com/en-eu/geforce/news/dlss-3-ea-sports-f1-24-dlss-2-capes/" class="text-lime-500 dark:text-lime-400 inline-flex items-center mt-3">Learn More
+                <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6 hover:scale-110 duration-300 all cursor-pointer">
+                <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="Notebooky" class="object-cover object-center h-full w-full" src="https://1gr.cz/fotky/idnes/23/011/cl8h/VSE988e07_nvrxnbi.jpg">
+                </div>
+                <h2 class="text-xl font-medium title-font text-gray-900 dark:text-white mt-5">Notebooky s GeForce řady 40</h2>
+                <p class="text-base leading-relaxed mt-2">Notebooky s RTX řady 40 jsou vyrobeny s ultraefektivní architekturou NVIDIA Ada Lovelace a obsahují specializovaná jádra umělé inteligence.</p>
+                <a target="_blank" href="https://www.nvidia.com/cs-cz/geforce/laptops/?nvid=nv-int-csfg-637448#cid=_nv-int-csfg_cs-cz" class="text-lime-500 dark:text-lime-400 inline-flex items-center mt-3">Learn More
+                <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Section - Kontakt -->
+        <section id="kontakt" class="text-gray-600 bg-slate-50 body-font relative -mt-16 dark:text-gray-400 dark:bg-gray-700">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 dark:text-white">Kontaktuj nás</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Nemusíš se bát napsat, rádi ti odpovíme.</p>
+            </div>
+            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <form id="contactForm" class="flex flex-wrap -m-2" action="https://formspree.io/f/xleqkdel" method="post">
+                <div class="p-2 w-1/2">
+                <div class="relative">
+                    <label for="name" class="leading-7 text-sm text-gray-600 dark:text-gray-400">Jméno</label>
+                    <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 dark:bg-gray-800 dark:text-white rounded border border-gray-300 focus:border-lime-500  focus:ring-2 focus:ring-lime-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+                </div>
+                </div>
+                <div class="p-2 w-1/2">
+                <div class="relative">
+                    <label for="email" class="leading-7 text-sm text-gray-600 dark:text-gray-400">Email</label>
+                    <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 dark:bg-gray-800 dark:text-white rounded border border-gray-300 focus:border-lime-500  focus:ring-2 focus:ring-lime-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+                </div>
+                </div>
+                <div class="p-2 w-full">
+                <div class="relative">
+                    <label for="message" class="leading-7 text-sm text-gray-600 dark:text-gray-400">Zpráva</label>
+                    <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 dark:bg-gray-800 dark:text-white rounded border border-gray-300 focus:border-lime-500 focus:ring-2 focus:ring-lime-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
+                </div>
+                </div>
+                <div class="p-2 w-full">
+                <button type="submit" class="flex mx-auto text-white font-semibold bg-lime-500 border-0 py-2 px-8 focus:outline-none hover:text-black dark:hover:bg-white dark:hover:text-lime-500 duration-300 all rounded text-lg">Odeslat</button>
+                </div>
+            </form>
+            <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                <a class="text-lime-500" href="mailto:info@nvidia.com.">info@nvidia.com.</a>
+                <p class="leading-normal my-5">Technology Park Drive 2
+                <br>Westford
+                </p>
+                <span class="inline-flex">
+                <a class="ml-0 text-gray-500 hover:text-lime-500 duration-300 all" href="https://www.facebook.com/NVIDIA/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="ml-4 text-gray-500 hover:text-lime-500 duration-300 all" href="https://x.com/nvidia?lang=cs" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a class="ml-4 text-gray-500 hover:text-lime-500 duration-300 all" href="https://www.instagram.com/nvidia/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </span>
+            </div>
+            </div>
+        </div>
+        </section>
+    
+    </main>
+    
+    <footer class="text-gray-600 bg-slate-200 dark:text-gray-400 body-font dark:bg-gray-900">
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+            <div class="w-full md:w-2/3 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                <h3 class="title-font font-medium text-gray-900 dark:text-white tracking-widest text-2xl mb-3">NVIDIA</h3>
+                <p class="mt-2 text-base text-gray-500 dark:text-gray-300">"The way it's meant to be played”</p>
+            </div>
+            <div class="flex-grow flex flex-wrap md:pl-10 md:mt-0 mt-10 md:text-left text-lg text-center w-full md:w-1/3 md:justify-end md:ml-auto">
+                <ul class="list-none p-0 mx-auto md:text-left">
+                    <li class="mb-3"><a class="hover:text-lime-500 duration-300 all" target="_blank" href="https://mapy.cz/zakladni?q=nvidia&source=osm&id=1111308477&ds=2&x=-72.0236344&y=42.5355062&z=7"><i class="fa-solid fa-location-dot"></i> USA</a></li>
+                    <li class="mb-3"><a class="hover:text-lime-500 duration-300 all" href="#kontakt">Kontakt</a></li>
+                    <li><a class="hover:text-lime-500 duration-300 all" href="sources.html">Copyright</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-slate-300 dark:bg-black">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                <p class="text-gray-500 dark:text-gray-300 text-sm text-center sm:text-left">© 2024 NVIDIA</p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                    <a class="text-gray-500 dark:text-gray-300 hover:text-lime-500 duration-300 all" href="https://www.facebook.com/NVIDIA/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="ml-3 text-gray-500 dark:text-gray-300 hover:text-lime-500 duration-300 all" href="https://x.com/nvidia?lang=cs" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a class="ml-3 text-gray-500 dark:text-gray-300 hover:text-lime-500 duration-300 all" href="https://www.instagram.com/nvidia/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
