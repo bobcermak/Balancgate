@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
     welcomeText.classList.add('fadeIn'); // Přidá třídu fadeIn pro animaci
 });
 
-
 //Hamburger menu//
 
 document.addEventListener('DOMContentLoaded', function () {

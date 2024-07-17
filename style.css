@@ -366,7 +366,6 @@ header {
     top: -100px;
 }
 
-
 /*Main*/
 
 /* Základní nastavení pro fadeIn animaci */
@@ -421,6 +420,26 @@ header {
   margin-right: 8px;
 }
 
+/*Slider*/
+
+.slider {
+  -webkit-box-shadow: 0px -6px 30px -10px rgba(122,116,109,1);
+  -moz-box-shadow: 0px -6px 30px -10px rgba(122,116,109,1);
+  box-shadow: 0px -6px 30px -10px rgba(122,116,109,1);
+}
+
+.butt1 {
+  background-color: #7A746D;
+  transition: 0.5s all;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.butt1:hover {
+  background-color: #5c5853;
+}
+
+/*Footer*/
 
 .zdroje ul li a {
   transition: 0.2s all;
@@ -461,6 +480,7 @@ header {
     }
 }
   
+
 
 
 
