@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="https://i.pinimg.com/736x/b4/9d/67/b49d67c1ff2ba13c8d25996169332197.jpg" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://kit.fontawesome.com/924cd312b8.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <title>NVIDIA</title>
+    <title>Balancgate</title>
 </head>
 <body>
     <header class="sticky-header z-50">
@@ -188,51 +187,46 @@
         </section>
 
         <!-- Section - Kontakt -->
-        <section id="kontakt" class="text-gray-600 bg-slate-50 body-font relative mt-0 dark:text-gray-400 dark:bg-gray-700">
-        <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-col text-center w-full mb-12">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 dark:text-white">Kontaktuj nás</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Nemusíš se bát napsat, rádi ti odpovíme.</p>
+        <section id="kontakt" class="text-gray-600 bg-[#f5e2cb] body-font relative mt-0" style="width: 90%; margin-left: 5%;">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-12">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Kontaktuj nás</h1>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-900">+420 604 338 393 | info@mujweb.com</p>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-900">U Brašnářova paláce, Liberec - Rybníček, 463 12</p>
+                </div>
+                <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                    <form id="contactForm" class="flex flex-wrap -m-2" action="https://formspree.io/f/xyyrjawd" method="post">
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="name" class="leading-7 text-sm text-gray-900">Jméno</label>
+                                <input type="text" id="name" name="Jméno" class="w-full bg-[#FFF6EB] bg-opacity-50 rounded border border-black focus:border-[#D4B896] focus:ring-2 focus:ring-[#D4B896] text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+                            </div>
+                        </div>
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="email" class="leading-7 text-sm text-gray-900">Email</label>
+                                <input type="email" id="email" name="Email" class="w-full bg-[#FFF6EB] bg-opacity-50 rounded border border-black focus:border-[#D4B896] focus:ring-2 focus:ring-[#D4B896] text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="message" class="leading-7 text-sm text-gray-900">Zpráva</label>
+                                <textarea id="message" name="Zpráva" class="w-full bg-[#FFF6EB] bg-opacity-50 rounded border border-black focus:border-[#D4B896] focus:ring-2 focus:ring-[#D4B896] h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <button type="submit" class="flex mx-auto text-white font-semibold bg-[#7A746D] border-0 py-2 px-8 focus:outline-none hover:text-[#7A746D] hover:bg-[#D4B896] duration-300 all rounded text-lg">Odeslat</button>
+                        </div>
+                    </form>
+                    <div class="p-2 w-full pt-8 mt-8 border-t border-black text-center">
+                        <span class="inline-flex">
+                            <a class="ml-0 text-gray-500 hover:text-[#D4B896] duration-300 all" href="https://www.facebook.com/kristyna.cermakova.505" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="ml-4 text-gray-500 hover:text-[#D4B896] duration-300 all" href="https://www.instagram.com/kita.cermakova/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </span>
+                    </div>
+                </div>
             </div>
-            <div class="lg:w-1/2 md:w-2/3 mx-auto">
-            <form id="contactForm" class="flex flex-wrap -m-2" action="https://formspree.io/f/xleqkdel" method="post">
-                <div class="p-2 w-1/2">
-                <div class="relative">
-                    <label for="name" class="leading-7 text-sm text-gray-600 dark:text-gray-400">Jméno</label>
-                    <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 dark:bg-gray-800 dark:text-white rounded border border-gray-300 focus:border-lime-500  focus:ring-2 focus:ring-lime-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
-                </div>
-                </div>
-                <div class="p-2 w-1/2">
-                <div class="relative">
-                    <label for="email" class="leading-7 text-sm text-gray-600 dark:text-gray-400">Email</label>
-                    <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 dark:bg-gray-800 dark:text-white rounded border border-gray-300 focus:border-lime-500  focus:ring-2 focus:ring-lime-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
-                </div>
-                </div>
-                <div class="p-2 w-full">
-                <div class="relative">
-                    <label for="message" class="leading-7 text-sm text-gray-600 dark:text-gray-400">Zpráva</label>
-                    <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 dark:bg-gray-800 dark:text-white rounded border border-gray-300 focus:border-lime-500 focus:ring-2 focus:ring-lime-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
-                </div>
-                </div>
-                <div class="p-2 w-full">
-                <button type="submit" class="flex mx-auto text-white font-semibold bg-lime-500 border-0 py-2 px-8 focus:outline-none hover:text-black dark:hover:bg-white dark:hover:text-lime-500 duration-300 all rounded text-lg">Odeslat</button>
-                </div>
-            </form>
-            <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                <a class="text-lime-500" href="mailto:info@nvidia.com.">info@nvidia.com.</a>
-                <p class="leading-normal my-5">Technology Park Drive 2
-                <br>Westford
-                </p>
-                <span class="inline-flex">
-                <a class="ml-0 text-gray-500 hover:text-lime-500 duration-300 all" href="https://www.facebook.com/NVIDIA/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a class="ml-4 text-gray-500 hover:text-lime-500 duration-300 all" href="https://x.com/nvidia?lang=cs" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                <a class="ml-4 text-gray-500 hover:text-lime-500 duration-300 all" href="https://www.instagram.com/nvidia/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </span>
-            </div>
-            </div>
-        </div>
         </section>
-    
     </main>
     
     <footer class="text-gray-600 bg-slate-200 dark:text-gray-400 body-font dark:bg-gray-900">
