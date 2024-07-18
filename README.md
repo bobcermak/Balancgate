@@ -1,0 +1,2 @@
+# Balancgate
+# Autor: Bob Čermák
