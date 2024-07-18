@@ -23,7 +23,7 @@
 
 body {
   margin: 0;
-  background-image: url(/IMG/masage_background.webp);
+  background-image: url(./IMG/masage_background.webp);
   background-attachment: fixed;
   background-size: cover;
 }
