@@ -439,21 +439,6 @@ header {
   background-color: #5c5853;
 }
 
-/*Footer*/
-
-.zdroje ul li a {
-  transition: 0.2s all;
-}
-
-.zdroje ul li a:hover {
-  color: #111e91;
-}
-
-.zdroje ul li a:visited {
-  color: #3c0e42;
-}
-
-
 /*Responsive*/
 
 @media (min-width: 640px) {
@@ -479,7 +464,8 @@ header {
         font-size: 28px;
     }
 }
-  
+
+
 
 
 

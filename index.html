@@ -11,14 +11,14 @@
     <script src="https://kit.fontawesome.com/924cd312b8.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Balancgate</title>
+    <title>Balancgate - vaše brána k životní rovnováze</title>
 </head>
 <body>
     <header class="sticky-header z-50">
         <nav class="relative px-4 py-4 flex justify-between items-center bg-[#E1CEB7] border-[#E1CEB7] h-24">
-            <div class="flex flex-col ml-16 items-center justify-center">
-                <h1 class="text-2xl lg:text-4xl font-semibold text-neutral-500">Balancgate</h1>
-                <p class="text-sm lg:text-lg text-neutral-500">MASÁŽE A TEJPOVÁNÍ</p>
+            <div class="flex flex-col ml-16 items-start justify-center">
+                <h1 class="text-2xl lg:text-4xl font-semibold text-neutral-500 leading-none">Balancgate</h1>
+                <p class="text-sm lg:text-lg text-neutral-500 leading-none">MASÁŽE A TEJPOVÁNÍ</p>
             </div>
             <!--Mobile-->
             <div class="lg:hidden">
@@ -84,11 +84,15 @@
     </header>
     
     <main>
-        <section class="welcome-section bg-[#D4B896] flex items-center justify-center h-[500px]" id="welcomeSection" style="width: 90%; margin-left: 5%;">
+        <section class="welcome-section bg-[#D4B896] flex items-center justify-center h-[500px] w-[90%] ml-[5%]" id="welcomeSection">
             <div class="text-center">
-                <h1 class="text-6xl font-semibold text-black mb-4 shadow-text">BALANCGATE</h1>
-                <p class="text-xl text-neutral-500 shadow-text">VAŠE BRÁNA K ŽIVOTNÍ ROVNOVÁZE</p>
-                <a href="./ostatni-strany/sluzby.html"><div class="butt relative flex justify-center items-center mt-6 text-lg w-36 h-14 text-white cursor-pointer" style="left: 50%; transform: translateX(-50%);">Služby</div></a>
+                <h1 class="text-4xl md:text-6xl font-semibold text-black mb-4 shadow-text">BALANCGATE</h1>
+                <p class="text-lg md:text-xl text-neutral-500 shadow-text">VAŠE BRÁNA K ŽIVOTNÍ ROVNOVÁZE</p>
+                <a href="./ostatni-strany/sluzby.html">
+                    <div class="butt relative flex justify-center items-center mt-6 text-base md:text-lg w-36 h-14 text-white cursor-pointer mx-auto">
+                        Služby
+                    </div>
+                </a>
             </div>
         </section>
         
@@ -101,7 +105,7 @@
                         <div class="swiper-slide mt-24 flex justify-center items-center">
                             <div class="relative flex flex-col lg:flex-row items-center justify-center">
                                 <figure class="relative lg:mr-10 order-1 lg:order-2">
-                                    <img class="lg:h-80 h-52 max-lg:-mt-14" src="./IMG/masage.jpg" alt="Hloubkova-massage">
+                                    <img class="lg:h-80 h-52 max-lg:-mt-4" src="./IMG/masage.jpg" alt="Hloubkova-massage">
                                 </figure>
                                 <div class="relative bg-[#E1CEB7] h-52 w-96 flex justify-center items-center z-30 mt-0 lg:mt-0 lg:ml-10 lg:-mt-20 order-2 lg:order-1">
                                     <h2 class="text-3xl text-neutral-500 max-lg:absolute">Hloubková masáž (části)</h2>
@@ -115,7 +119,7 @@
                         <div class="swiper-slide mt-24 flex justify-center items-center">
                             <div class="relative flex flex-col lg:flex-row items-center justify-center">
                                 <figure class="relative lg:mr-10 order-1 lg:order-2">
-                                    <img class="lg:h-80 h-52 max-lg:-mt-14" src="./IMG/masage.jpg" alt="Hloubkova-massage">
+                                    <img class="lg:h-80 h-52 max-lg:-mt-4" src="./IMG/masage.jpg" alt="Hloubkova-massage">
                                 </figure>
                                 <div class="relative bg-[#E1CEB7] h-52 w-96 flex justify-center items-center z-30 mt-0 lg:mt-0 lg:ml-10 lg:-mt-20 order-2 lg:order-1">
                                     <h2 class="text-3xl text-neutral-500 max-lg:absolute">Hloubková masáž (části)</h2>
@@ -129,7 +133,7 @@
                         <div class="swiper-slide mt-24 flex justify-center items-center">
                             <div class="relative flex flex-col lg:flex-row items-center justify-center">
                                 <figure class="relative lg:mr-10 order-1 lg:order-2">
-                                    <img class="lg:h-80 h-52 max-lg:-mt-14" src="./IMG/masage.jpg" alt="Hloubkova-massage">
+                                    <img class="lg:h-80 h-52 max-lg:-mt-4" src="./IMG/masage.jpg" alt="Hloubkova-massage">
                                 </figure>
                                 <div class="relative bg-[#E1CEB7] h-52 w-96 flex justify-center items-center z-30 mt-0 lg:mt-0 lg:ml-10 lg:-mt-20 order-2 lg:order-1">
                                     <h2 class="text-3xl text-neutral-500 max-lg:absolute">Hloubková masáž (části)</h2>
@@ -147,51 +151,52 @@
             </div>
         </section>
         
-        <section class="relative flex items-center bg-[#FFF6EB] h-[460px] text-gray-600 body-font">
-            <div class="container px-5 py-24 mx-auto">
-              <div class="flex flex-wrap -m-4">
-                <div class="xl:w-1/4 md:w-1/2 p-4">
-                  <div class="bg-gray-100 p-6 rounded-lg">
-                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
-                    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
-                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
-                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                  </div>
+        <section class="relative flex items-center bg-[#FFF6EB] h-auto min-h-[460px] py-12 md:py-24 text-gray-600 body-font">
+            <div class="container px-5 mx-auto">
+                <div class="flex flex-wrap -m-4">
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-100 p-6 rounded-lg">
+                            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
+                            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
+                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-100 p-6 rounded-lg">
+                            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content">
+                            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
+                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-100 p-6 rounded-lg">
+                            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content">
+                            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
+                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-100 p-6 rounded-lg">
+                            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content">
+                            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+                            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="xl:w-1/4 md:w-1/2 p-4">
-                  <div class="bg-gray-100 p-6 rounded-lg">
-                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content">
-                    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
-                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
-                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                  </div>
-                </div>
-                <div class="xl:w-1/4 md:w-1/2 p-4">
-                  <div class="bg-gray-100 p-6 rounded-lg">
-                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content">
-                    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
-                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
-                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                  </div>
-                </div>
-                <div class="xl:w-1/4 md:w-1/2 p-4">
-                  <div class="bg-gray-100 p-6 rounded-lg">
-                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content">
-                    <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
-                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
-                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-                  </div>
-                </div>
-              </div>
             </div>
         </section>
+        
 
         <!-- Section - Kontakt -->
         <section id="kontakt" class="text-gray-600 bg-[#f5e2cb] body-font relative mt-0" style="width: 90%; margin-left: 5%;">
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-col text-center w-full mb-12">
                     <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Kontaktuj nás</h1>
-                    <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-900">+420 604 338 393 | info@mujweb.com</p>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-900">+420 604 338 393 | <span><a href="mailto:kitacermakova@gmail.com">kitacermakova@gmail.com</a></span></p>
                     <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-900">U Brašnářova paláce, Liberec - Rybníček, 463 12</p>
                 </div>
                 <div class="lg:w-1/2 md:w-2/3 mx-auto">
@@ -229,32 +234,35 @@
         </section>
     </main>
     
-    <footer class="text-gray-600 bg-slate-200 dark:text-gray-400 body-font dark:bg-gray-900">
-        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-            <div class="w-full md:w-2/3 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-                <h3 class="title-font font-medium text-gray-900 dark:text-white tracking-widest text-2xl mb-3">NVIDIA</h3>
-                <p class="mt-2 text-base text-gray-500 dark:text-gray-300">"The way it's meant to be played”</p>
+    <footer class="bg-[#E1CEB7] py-6 mt-[-1%] md:py-8">
+        <div class="mx-auto w-full max-w-screen-xl px-4">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-3xl font-semibold text-neutral-500">Balancgate</h3>
+                    <p class="mt-4 text-neutral-500">+420 604 338 393 | <span><a href="mailto:kitacermakova@gmail.com">kitacermakova@gmail.com</a></span></p>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase text-neutral-500">Follow us</h2>
+                    <ul class="text-neutral-500 font-medium">
+                        <li class="mb-4">
+                            <a href="https://www.instagram.com/kita.cermakova/" class="hover:underline">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/kristyna.cermakova.505" class="hover:underline">Facebook</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="flex-grow flex flex-wrap md:pl-10 md:mt-0 mt-10 md:text-left text-lg text-center w-full md:w-1/3 md:justify-end md:ml-auto">
-                <ul class="list-none p-0 mx-auto md:text-left">
-                    <li class="mb-3"><a class="hover:text-lime-500 duration-300 all" target="_blank" href="https://mapy.cz/zakladni?q=nvidia&source=osm&id=1111308477&ds=2&x=-72.0236344&y=42.5355062&z=7"><i class="fa-solid fa-location-dot"></i> USA</a></li>
-                    <li class="mb-3"><a class="hover:text-lime-500 duration-300 all" href="#kontakt">Kontakt</a></li>
-                    <li><a class="hover:text-lime-500 duration-300 all" href="sources.html">Copyright</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="bg-slate-300 dark:bg-black">
-            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                <p class="text-gray-500 dark:text-gray-300 text-sm text-center sm:text-left">© 2024 NVIDIA</p>
-                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-                    <a class="text-gray-500 dark:text-gray-300 hover:text-lime-500 duration-300 all" href="https://www.facebook.com/NVIDIA/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a class="ml-3 text-gray-500 dark:text-gray-300 hover:text-lime-500 duration-300 all" href="https://x.com/nvidia?lang=cs" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a class="ml-3 text-gray-500 dark:text-gray-300 hover:text-lime-500 duration-300 all" href="https://www.instagram.com/nvidia/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </span>
+            <hr class="my-6 border-gray-200 lg:my-8" />
+            <div class="md:flex md:items-center md:justify-between">
+                <p class="text-md text-neutral-500 sm:text-center">© 2024 Balancgate</p>
+                <div class="flex justify-center mt-6 md:mt-0 md:justify-end">
+                    <a class="text-2xl text-neutral-500 hover:text-black ease-in duration-300 mx-2" href="https://www.instagram.com/kita.cermakova/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="text-2xl text-neutral-500 hover:text-black ease-in duration-300 mx-2" href="https://www.facebook.com/kristyna.cermakova.505" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
             </div>
         </div>
     </footer>
-    
     
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
