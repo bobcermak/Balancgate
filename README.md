@@ -1,3 +1,3 @@
 # Balancgate
 # Autor: Bob Čermák
-# https://bobcermak.github.io/balan/
+# https://bobcermak.github.io/Balancgate/
