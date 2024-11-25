@@ -21,7 +21,7 @@ header {
 }
 
 .fadeIn {
-  animation: fadeIn 3s forwards; /* forwards zajistí, že se vlastnosti animace zachovají po dokončení */
+  animation: fadeIn 1.5s forwards; /* forwards zajistí, že se vlastnosti animace zachovají po dokončení */
 }
 
 .shadow-text {
