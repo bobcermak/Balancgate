@@ -1,0 +1,47 @@
+@import url(normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Header*/
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transition: top 0.3s;
+}
+
+.header-hidden {
+    top: -100px;
+}
+
+/*Main*/
+
+body {
+  background-image: url(https://static.wixstatic.com/media/11062b_74c3bd45471e49a7a0c85a0953bc8149~mv2_d_5478_3652_s_4_2.jpg/v1/fill/w_1899,h_858,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_74c3bd45471e49a7a0c85a0953bc8149~mv2_d_5478_3652_s_4_2.jpg);
+}
+
+/*Animations*/
+
+.animation-item--1, .animation-item--2, .animation-item--3, .animation-item--4, .animation-item--5, .animation-item--6 {
+  opacity: 0;
+} 
+
+/*Delay*/
+
+.animation-item--1.animate, .animation-item--2.animate, .animation-item--3.animate, .animation-item--4.animate, .animation-item--5.animate, .animation-item--6.animate {
+  animation: slide-up .5s ease-in-out forwards;
+}
+
+/*Animations*/
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

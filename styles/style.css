@@ -1,8 +1,19 @@
 @import url(normalize.css);
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*Presets*/
+
+/*Button*/
+
+.button--welcome {
+  opacity: 0;
+  background-color: #7A746D;
+  transition: 0.5s all;
+}
+
+.button--welcome:hover {
+  background-color: #5c5853;
+}
 
  /*Header*/
 
@@ -20,6 +31,10 @@
 
 /*Main*/
 
+body {
+  background-image: url(https://static.wixstatic.com/media/11062b_74c3bd45471e49a7a0c85a0953bc8149~mv2_d_5478_3652_s_4_2.jpg/v1/fill/w_1899,h_858,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_74c3bd45471e49a7a0c85a0953bc8149~mv2_d_5478_3652_s_4_2.jpg);
+}
+
 .container--animation {
   margin-left: 2em;
   height: fit-content;
@@ -28,26 +43,40 @@
 /*Animations - FirstSection*/
 
 .animation--balancgate {
-  font-size: 7em;
+  font-size: clamp(2em, 5vw, 7em);
   font-weight: bold;
   color: black;
   opacity: 0;
   transform: translateY(20px);
-  animation: slide-up 1s ease-in-out forwards; /*js*/
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 } 
 
 .img--flower {
-  margin-top: 10em;
-  animation: slide-up-flower 1s ease-in-out forwards; /*js*/
+  opacity: 0;
+  margin-top: 7em;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   transform: rotate(-45deg);
+  max-width: 100%;
+  height: auto;
 }
 
 .animation--gate {
-  animation: slide-up 1s ease-in-out forwards; /*js*/
+  font-size: clamp(1em, 3vw, 2em);
+  opacity: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+/*Delay*/
+
+.animation--balancgate.animate, .animation--gate.animate, .button--welcome.animate {
+  animation: slide-up .5s ease-in-out forwards;
+}
+
+.img--flower.animate {
+  animation: slide-up-flower .5s ease-in-out forwards;
+}
+
+/*Animations*/
 
 @keyframes slide-up {
   0% {
@@ -71,38 +100,45 @@
 @keyframes slide-up-flower {
   0% {
     opacity: 0;
-    transform: translateY(50px) rotate(-45deg); /* Start: posunutí a fixní rotace */
+    transform: translateY(50px) rotate(-45deg);
   }
   50% {
     opacity: 0.5;
   }
   70% {
-    transform: translateY(-2px) rotate(-45deg); /* Lehké předskočení */
+    transform: translateY(-2px) rotate(-45deg);
   }
   100% {
     opacity: 1;
-    transform: translateY(0) rotate(-45deg); /* Konec: výchozí poloha, fixní rotace */
+    transform: translateY(0) rotate(-45deg);
   }
 }
 
+/*Responsive - FirstSection*/
+
+@media screen and (max-width: 768px) {
+  .welcome-section {
+    flex-wrap: wrap;
+  }
+
+  .img--flower {
+    transform: rotate(90deg);
+    max-width: 60%;
+    margin: -16em auto;
+  }
+
+  .img--flower.animate {
+    animation: slide-up .5s ease-in-out forwards;
+  }
+
+  .container--animation {
+    margin: 8em auto;
+  }
+}
 
 .shadow-text {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-
-/*Button*/
-
-.butt {
-  background-color: #7A746D;
-  transition: 0.5s all;
-  animation: slide-up 1s ease-in-out forwards; /*js*/
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.butt:hover {
-  background-color: #5c5853;
-}
-
 
 .swiper-button-prev,
 .swiper-button-next {
@@ -138,14 +174,14 @@
   box-shadow: 0px -6px 30px -10px rgba(122,116,109,1);
 }
 
-.butt1 {
+.button--slider {
   background-color: #7A746D;
   transition: 0.5s all;
   left: 50%;
   transform: translate(-50%);
 }
 
-.butt1:hover {
+.button--slider:hover {
   background-color: #5c5853;
 }
 

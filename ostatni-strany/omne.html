@@ -10,12 +10,11 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://kit.fontawesome.com/924cd312b8.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="omne.css">
-    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../styles/fix.css">
     <title>O nás - Balancgate</title>
 </head>
 <body>
-    <header class="sticky-header z-50">
+    <header class="sticky-header z-50 font-medium">
         <nav class="relative px-4 py-4 flex justify-between items-center bg-[#E1CEB7] border-[#E1CEB7] h-24">
             <a href="../index.html" class="flex flex-col ml-16 items-start justify-center">
                 <h1 class="text-2xl lg:text-4xl font-semibold text-neutral-500 leading-none">Balancgate</h1>
@@ -92,7 +91,9 @@
             <div class="container mx-auto flex px-5 py-24 flex-col md:flex-row items-center text-center md:text-left">
                 <!-- Obrázek vedle textu na rozlišeních md a větších -->
                 <div class="md:w-1/2 w-full mb-10 md:mb-0 max-md:flex max-md:justify-center max-md:items-center">
-                    <img class="object-cover object-center rounded max-h-80 md:max-h-96" loading="lazy" alt="Hero" src="../IMG/kita2.PNG" width="500" height="500">
+                    <picture>
+                        <img class="object-cover object-center rounded max-h-80 md:max-h-96" loading="lazy" alt="Hero" src="../img/kita.PNG" width="500" height="500">
+                    </picture>
                 </div>
                 <!-- Text vedle obrázku na rozlišeních md a větších -->
                 <div class="md:w-1/2 w-full flex flex-col items-center md:items-start md:pl-10">
@@ -113,7 +114,9 @@
                     </div>
                 </div>
                 <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                    <img class="object-cover object-center rounded" alt="Bg - foto" src="https://static.wixstatic.com/media/11062b_74c3bd45471e49a7a0c85a0953bc8149~mv2_d_5478_3652_s_4_2.jpg/v1/fill/w_1899,h_858,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_74c3bd45471e49a7a0c85a0953bc8149~mv2_d_5478_3652_s_4_2.jpg" width="500" height="500">
+                    <picture>
+                        <img class="object-cover object-center rounded" alt="Bg - foto" src="https://static.wixstatic.com/media/11062b_74c3bd45471e49a7a0c85a0953bc8149~mv2_d_5478_3652_s_4_2.jpg/v1/fill/w_1899,h_858,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_74c3bd45471e49a7a0c85a0953bc8149~mv2_d_5478_3652_s_4_2.jpg" width="500" height="500">
+                    </picture>
                 </div>
             </div>
         </section>
@@ -148,6 +151,6 @@
         </div>
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="../main.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

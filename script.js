@@ -23,11 +23,6 @@ headerLinks.forEach(link => {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const welcomeText = document.querySelector('#welcomeSection .text-center'); // Vybere textový obsah uvnitř welcomeSection
-    welcomeText.classList.add('fadeIn'); // Přidá třídu fadeIn pro animaci
-});
-
 //Hamburger menu//
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -59,6 +54,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /*Main*/
 
+//FirstSection
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Animace pro stránku s animacemi
+  const animations = [
+    { element: document.querySelector(".animation--balancgate"), delay: 400 },
+    { element: document.querySelector(".animation--gate"), delay: 600 },
+    { element: document.querySelector(".button--welcome"), delay: 800 },
+    { element: document.querySelector(".img--flower"), delay: 1000 },
+  ];
+
+  animations.forEach(({ element, delay }) => {
+    setTimeout(() => {
+      if (element) element.classList.add("animate");
+    }, delay);
+  });
+
+  // Animace pro stránku s "službami"
+  const servicesAnimations = [
+    { element: document.querySelector(".animation-item--1"), delay: 400 },
+    { element: document.querySelector(".animation-item--2"), delay: 600 },
+    { element: document.querySelector(".animation-item--3"), delay: 800 },
+    { element: document.querySelector(".animation-item--4"), delay: 1000 },
+    { element: document.querySelector(".animation-item--5"), delay: 1200 },
+    { element: document.querySelector(".animation-item--6"), delay: 1400 },
+  ];
+
+  servicesAnimations.forEach(({ element, delay }) => {
+    setTimeout(() => {
+      if (element) element.classList.add("animate");
+    }, delay);
+  });
+});
 
 //SLider
 
@@ -90,4 +118,3 @@ form.addEventListener('submit', function(event) {
     alert('Prosím vyplňte všechna povinná pole.'); // Display alert message
   }
 });
-
