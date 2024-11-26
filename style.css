@@ -1,6 +1,12 @@
-/*Header*/
+@import url(normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-header {
+ /*Header*/
+
+ header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -14,15 +20,71 @@ header {
 
 /*Main*/
 
-/* Základní nastavení pro fadeIn animaci */
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+.container--animation {
+  margin-left: 2em;
+  height: fit-content;
 }
 
-.fadeIn {
-  animation: fadeIn 1.5s forwards; /* forwards zajistí, že se vlastnosti animace zachovají po dokončení */
+/*Animations - FirstSection*/
+
+.animation--balancgate {
+  font-size: 7em;
+  font-weight: bold;
+  color: black;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slide-up 1s ease-in-out forwards; /*js*/
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+} 
+
+.img--flower {
+  margin-top: 10em;
+  animation: slide-up-flower 1s ease-in-out forwards; /*js*/
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transform: rotate(-45deg);
 }
+
+.animation--gate {
+  animation: slide-up 1s ease-in-out forwards; /*js*/
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  50% {
+    opacity: .5;
+  }
+  70% {
+    transform: translateY(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*Flower*/
+
+@keyframes slide-up-flower {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) rotate(-45deg); /* Start: posunutí a fixní rotace */
+  }
+  50% {
+    opacity: 0.5;
+  }
+  70% {
+    transform: translateY(-2px) rotate(-45deg); /* Lehké předskočení */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(-45deg); /* Konec: výchozí poloha, fixní rotace */
+  }
+}
+
 
 .shadow-text {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -33,6 +95,8 @@ header {
 .butt {
   background-color: #7A746D;
   transition: 0.5s all;
+  animation: slide-up 1s ease-in-out forwards; /*js*/
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .butt:hover {
@@ -110,10 +174,3 @@ header {
         font-size: 28px;
     }
 }
-
-
-
-
-
-
-

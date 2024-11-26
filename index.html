@@ -11,7 +11,6 @@
     <script src="https://kit.fontawesome.com/924cd312b8.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
     <title>Balancgate - vaše brána k životní rovnováze</title>
 </head>
 <body>
@@ -88,16 +87,21 @@
         </div>
     </header>
     <main>
-        <section class="welcome-section bg-[#D4B896] flex items-center justify-center h-[500px] w-[90%] ml-[5%]" id="welcomeSection">
-            <div class="text-center">
-                <h1 class="text-4xl md:text-6xl font-semibold text-black mb-4 shadow-text">BALANCGATE</h1>
-                <p class="text-lg md:text-xl text-neutral-500 shadow-text">VAŠE BRÁNA K ŽIVOTNÍ ROVNOVÁZE</p>
+        <section class="welcome-section bg-[#D4B896] flex justify-evenly items-center h-[700px] w-[90%] ml-[5%]" id="welcomeSection">
+            <div class="container--animation text-center flex flex-col gap-2 h-[320px]">
+                <h1 class="animation--balancgate">BALANCGATE</h1>
+                <p class="animation--gate text-lg md:text-3xl text-neutral-500 shadow-text">VAŠE BRÁNA K ŽIVOTNÍ ROVNOVÁZE</p>
                 <a href="./ostatni-strany/sluzby.html" aria-label="Tlačítko služby">
-                    <div class="butt relative flex justify-center items-center mt-6 text-base md:text-lg w-36 h-14 text-white cursor-pointer mx-auto">
+                    <div class="butt relative flex justify-center items-center mt-6 text-xl md:text-3xl w-48 h-20 text-white cursor-pointer mx-auto rounded-lg">
                         Služby
                     </div>
                 </a>
             </div>
+            <figure>
+                <picture>
+                    <img class="img--flower" src="/IMG/flower.webp" alt="Logo - Balancgate" width="550px" height="550px">
+                </picture>
+            </figure>
         </section>
         <section class="slider text-gray-600 h-[500px] bg-[#f5e2cb] body-font relative" style="width: 90%; margin-left: 5%;">
             <h2 class="absolute text-5xl font-serif text-neutral-500 top-6 left-1/2 transform -translate-x-1/2">Služby</h2>
@@ -190,7 +194,7 @@
                         </div>
                     </div>
                     <!-- Šipky -->
-                    <div class="swiper-button-prev bg-[#7A746D] rounded-full text-white absolute left-0 top-1/2 transform -translate-y-1/2 z-10"></div>
+                    <div class="swiper-button-prev bg-[#7A746D text-white absolute left-0 top-1/2 transform -translate-y-1/2 z-10"></div>
                     <div class="swiper-button-next bg-[#7A746D] rounded-full text-white absolute right-0 top-1/2 transform -translate-y-1/2 z-10"></div>
                 </div>
             </div>
