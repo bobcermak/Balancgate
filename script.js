@@ -86,10 +86,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const aboutAnimations = [
-    { element: document.querySelector(".animation--vzdelani"), delay: 400 },
-    { element: document.querySelector(".animation--vzdelani--img"), delay: 600 },
-    { element: document.querySelector(".animation--muj-pristup"), delay: 800 },
-    { element: document.querySelector(".animation--muj-pristup--img"), delay: 1000 },
+    { element: document.querySelector(".animation--text"), delay: 400 },
+    { element: document.querySelector(".animation--vzdelani"), delay: 500 },
+    { element: document.querySelector(".animation--vzdelani--img"), delay: 700 },
+    { element: document.querySelector(".animation--muj-pristup"), delay: 900 },
+    { element: document.querySelector(".animation--muj-pristup--img"), delay: 1100 },
   ];
 
   aboutAnimations.forEach(({ element, delay }) => {
