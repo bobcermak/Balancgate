@@ -71,12 +71,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   
   const servicesAnimations = [
-    { element: document.querySelector(".animation-item--1"), delay: 400 },
-    { element: document.querySelector(".animation-item--2"), delay: 600 },
-    { element: document.querySelector(".animation-item--3"), delay: 800 },
-    { element: document.querySelector(".animation-item--4"), delay: 1000 },
-    { element: document.querySelector(".animation-item--5"), delay: 1200 },
-    { element: document.querySelector(".animation-item--6"), delay: 1400 },
+    { element: document.querySelector(".animation--text"), delay: 400 },
+    { element: document.querySelector(".animation-item--1"), delay: 500 },
+    { element: document.querySelector(".animation-item--2"), delay: 700 },
+    { element: document.querySelector(".animation-item--3"), delay: 900 },
+    { element: document.querySelector(".animation-item--4"), delay: 1100 },
+    { element: document.querySelector(".animation-item--5"), delay: 1300 },
+    { element: document.querySelector(".animation-item--6"), delay: 1500 },
   ];
 
   servicesAnimations.forEach(({ element, delay }) => {
@@ -86,11 +87,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const aboutAnimations = [
-    { element: document.querySelector(".animation--text"), delay: 400 },
-    { element: document.querySelector(".animation--vzdelani"), delay: 500 },
-    { element: document.querySelector(".animation--vzdelani--img"), delay: 700 },
-    { element: document.querySelector(".animation--muj-pristup"), delay: 900 },
-    { element: document.querySelector(".animation--muj-pristup--img"), delay: 1100 },
+    { element: document.querySelector(".animation--vzdelani"), delay: 400 },
+    { element: document.querySelector(".animation--vzdelani--img"), delay: 600 },
+    { element: document.querySelector(".animation--muj-pristup"), delay: 800 },
+    { element: document.querySelector(".animation--muj-pristup--img"), delay: 1000 },
   ];
 
   aboutAnimations.forEach(({ element, delay }) => {

@@ -16,7 +16,7 @@
 <body>
     <header class="sticky-header z-50 font-medium">
         <nav class="relative px-4 py-4 flex justify-between items-center bg-[#E1CEB7] border-[#E1CEB7] h-24">
-            <a href="../index.html" class="flex flex-col ml-16 items-start justify-center">
+            <a href="../index.html" class="flex flex-col ml-10 items-start justify-center">
                 <h1 class="text-2xl lg:text-4xl font-semibold text-neutral-500 leading-none">Balancgate</h1>
                 <h2 class="text-sm lg:text-lg text-neutral-500 leading-none">MASÁŽE A TEJPOVÁNÍ</h2>
             </a>
@@ -89,21 +89,22 @@
     <main class="bg-[#FFF6EB] relative" style="width: 90%; margin-left: 5%;">
         <section class="text-gray-600 relative mt-14 body-font overflow-hidden">
             <div class="container px-5 py-24 mx-auto">
-                <div class="lg:w-4/5 mx-auto flex flex-wrap">
-                    <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
-                        <!-- Změněno: flex třídy pro zarovnání vlevo -->
-                        <div class="flex flex-col items-start text-left">
-                            <h2 class="md:text-5xl text-3xl md:text-center title-font text-neutral-500 tracking-widest font-medium mb-5 underline underline-offset-4">Uvolňující masáž břicha</h2>
+                <div class="lg:w-4/5 mx-auto flex flex-col lg:flex-row">
+                    <article class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
+                        <header class="flex flex-col items-start text-left">
+                            <h2 class="md:text-5xl text-3xl title-font text-neutral-500 tracking-widest font-medium mb-5 underline underline-offset-4">Uvolňující masáž břicha</h2>
                             <h2 class="text-gray-900 text-2xl title-font font-medium mb-3">Popis služby</h2>
+                            <p class="leading-relaxed mb-6">
+                                <span class="block font-bold mb-2">Máte problémy s vyprazdňováním či plynatostí?</span>
+                                <span class="block font-bold mb-4">Nechcete užívat projímadla a jiné léky?</span>
+                            </p>
+                        </header>
+                        <div>
+                            <p class="leading-relaxed mb-6">
+                                <span class="font-bold">Masáž břicha</span> se zaměřuje především na peristaltiku tlustého střeva. Pomalými pohyby se snažíme napomoci tlustému střevu k jeho správné funkci a klientovi ulevit od bolesti a nepříjemného pocitu. <span class="font-bold">Výsledky byste měli pocítit do 24h.</span>
+                            </p>
                         </div>
-                        <p class="leading-relaxed mb-6">
-                            <span class="block font-bold mb-2">Máte problémy s vyprazdňováním či plynatostí?</span>
-                            <span class="block font-bold mb-4">Nechcete užívat projímadla a jiné léky?</span>
-                        </p>
-                        <p class="leading-relaxed mb-6">
-                            <span class="font-bold">Masáž břicha</span> se zaměřuje především na peristaltiku tlustého střeva. Pomalými pohyby se snažíme napomoci tlustému střevu k jeho správné funkci a klientovi ulevit od bolesti a nepříjemného pocitu. <span class="font-bold">Výsledky byste měli pocítit do 24h.</span>
-                        </p>
-                        <div class="flex flex-col sm:flex-row items-start sm:items-center sm:justify-between">
+                        <footer class="flex flex-col sm:flex-row items-start sm:items-center sm:gap-10">
                             <div class="flex border w-full sm:w-72 border-black bg-white mb-4 sm:mb-0">
                                 <div class="w-1/2 p-4 border-r border-black text-center font-bold text-neutral-500">
                                     20 min
@@ -115,12 +116,16 @@
                             <a href="#" class="inline-block" aria-label="Tlačítko rezervovat">
                                 <div class="inline-flex py-4 px-6 text-[#7A746D] font-semibold bg-[#E1CEB7] border-0 focus:outline-none hover:text-white hover:bg-[#7A746D] duration-300 rounded text-xl">Rezervovat</div>
                             </a>
-                        </div>
-                    </div>
-                    <img alt="Hloubková masáž (záda a krk)" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded mt-4 lg:mt-0" loading="lazy" src="https://www.velvesa.cz/user_data/velvesa-co-pomoze-pri-zapche-3.jpg" width="500" height="500">
+                        </footer>
+                    </article>
+                    <figure class="lg:w-1/2 w-full mt-4 lg:mt-0 h-fit">
+                        <picture>
+                            <img alt="Hloubková masáž (záda a krk)" class="w-full lg:h-auto h-64 object-cover object-center rounded" loading="lazy" src="https://www.velvesa.cz/user_data/velvesa-co-pomoze-pri-zapche-3.jpg" width="500" height="500">
+                        </picture>
+                    </figure>
                 </div>
             </div>
-        </section>
+        </section>        
     </main>
     <footer class="bg-[#E1CEB7] py-6 mt-[-1%] md:py-20">
         <div class="mx-auto w-full max-w-screen-xl px-4">
