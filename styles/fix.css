@@ -21,7 +21,7 @@ body {
   background-image: url(https://static.wixstatic.com/media/11062b_74c3bd45471e49a7a0c85a0953bc8149~mv2_d_5478_3652_s_4_2.jpg/v1/fill/w_1899,h_858,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_74c3bd45471e49a7a0c85a0953bc8149~mv2_d_5478_3652_s_4_2.jpg);
 }
 
-/*Animations*/
+/*Services-animations*/
 
 .animation-item--1, .animation-item--2, .animation-item--3, .animation-item--4, .animation-item--5, .animation-item--6 {
   opacity: 0;
@@ -31,6 +31,18 @@ body {
 
 .animation-item--1.animate, .animation-item--2.animate, .animation-item--3.animate, .animation-item--4.animate, .animation-item--5.animate, .animation-item--6.animate {
   animation: slide-up .5s ease-in-out forwards;
+}
+
+/*About-animations*/
+
+.animation--vzdelani, .animation--vzdelani--img, .animation--muj-pristup, .animation--muj-pristup--img {
+  opacity: 0;
+}
+
+/*Delay*/
+
+.animation--vzdelani.animate, .animation--vzdelani--img.animate, .animation--muj-pristup.animate, .animation--muj-pristup--img.animate {
+  animation: slide-up 0.5s ease-in-out forwards;
 }
 
 /*Animations*/

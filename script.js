@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
 //FirstSection
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Animace pro stránku s animacemi
   const animations = [
     { element: document.querySelector(".animation--balancgate"), delay: 400 },
     { element: document.querySelector(".animation--gate"), delay: 600 },
@@ -70,8 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (element) element.classList.add("animate");
     }, delay);
   });
-
-  // Animace pro stránku s "službami"
+  
   const servicesAnimations = [
     { element: document.querySelector(".animation-item--1"), delay: 400 },
     { element: document.querySelector(".animation-item--2"), delay: 600 },
@@ -82,6 +80,19 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   servicesAnimations.forEach(({ element, delay }) => {
+    setTimeout(() => {
+      if (element) element.classList.add("animate");
+    }, delay);
+  });
+
+  const aboutAnimations = [
+    { element: document.querySelector(".animation--vzdelani"), delay: 400 },
+    { element: document.querySelector(".animation--vzdelani--img"), delay: 600 },
+    { element: document.querySelector(".animation--muj-pristup"), delay: 800 },
+    { element: document.querySelector(".animation--muj-pristup--img"), delay: 1000 },
+  ];
+
+  aboutAnimations.forEach(({ element, delay }) => {
     setTimeout(() => {
       if (element) element.classList.add("animate");
     }, delay);
