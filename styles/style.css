@@ -7,7 +7,7 @@
 .button--welcome {
   opacity: 0;
   background-color: #7A746D;
-  transition: 0.5s all;
+  transition: .5s all;
 }
 
 .button--welcome:hover {
