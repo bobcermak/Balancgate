@@ -1,5 +1,6 @@
 @import url(normalize.css);
 @import url(https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap);
+
 /*Presets*/
 
 html {
@@ -26,6 +27,7 @@ body {
 }
 
  /*Header*/
+ 
 body > header {
   position: fixed;
   top: 0;
