@@ -1,4 +1,4 @@
-/*Header*/
+//Header
 
 document.addEventListener('DOMContentLoaded', function() {
     let lastScrollY = window.scrollY;
@@ -23,7 +23,7 @@ headerLinks.forEach(link => {
     }
 });
 
-//Hamburger menu//
+//Hamburger menu
 
 document.addEventListener('DOMContentLoaded', function () {
     const navbarBurger = document.querySelector('.navbar-burger');
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-/*Main*/
+//Main
 
 //FirstSection
 
@@ -99,6 +99,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }, delay);
   });
 });
+
+//Footer
+
+document.getElementById("year").textContent = new Date().getFullYear();
 
 //SLider
 
