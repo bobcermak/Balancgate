@@ -11,6 +11,9 @@ html {
 body {
   font-family: 'Outfit', sans-serif;
   overscroll-behavior: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
 }
 
 @media screen and (min-width: 640px) {
@@ -53,6 +56,10 @@ body > header {
 }
 
 /*Main*/
+
+main {
+  flex-grow: 1;
+}
 
 .container--animation {
   margin-left: 2em;
