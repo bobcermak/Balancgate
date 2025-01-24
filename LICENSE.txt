@@ -1,4 +1,4 @@
-Copyright (c) 2024 BobCermak
+Copyright (c) 2025 BobCermak
 
 Tento software je poskytován pouze pro referenční účely. 
 Bez výslovného písemného souhlasu autora nesmí být kód použit, kopírován, modifikován nebo distribuován, a to ani částečně, v žádné formě ani prostředky, včetně elektronických nebo mechanických.
