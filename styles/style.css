@@ -4,12 +4,12 @@
 /*Presets*/
 
 html {
+  font-family: 'Outfit', sans-serif;
   scroll-behavior: smooth;
   overscroll-behavior: none;
 }
 
 body {
-  font-family: 'Outfit', sans-serif;
   overscroll-behavior: none;
   display: flex;
   flex-direction: column;
